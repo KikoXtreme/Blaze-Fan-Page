@@ -1,8 +1,9 @@
 import './App.css';
-import logo from './logo.svg';
+import {Route, Routes} from 'react-router-dom';
 
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+import { Home } from './components/Main/Home/Home';
 
 function App() {
     return (
@@ -10,10 +11,9 @@ function App() {
             <Header />
 
             <main id="main">
-                <div>
-                    Main All Information in the Web Application will be here!
-                </div>
-                <img src={logo} className="App-logo" alt="logo" />
+            <Routes >
+                <Route path='/' element={<Home />}></Route>
+            </Routes>
             </main>
 
             <Footer />

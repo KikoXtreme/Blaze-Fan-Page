@@ -1,0 +1,12 @@
+.notFound {
+    background-color: aqua;
+
+}
+
+.notFound-title{
+    font-size: 64px;
+}
+
+.notFound-link{
+    font-size: 32px;
+}

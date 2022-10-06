@@ -1,5 +1,5 @@
 .header {
-    background-color: darkblue;
+    background-color: red;
     color: yellow;
 }
 
@@ -9,10 +9,14 @@
 
 .header-lists {
     display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
     background-color: green;
 }
 
 .header-lists-list {
     display: flex;
+    list-style-type: none;
+    gap: 40px;
     background-color: blueviolet;
 }

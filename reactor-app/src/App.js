@@ -10,17 +10,22 @@ import { Login } from './components/Auth/Login/Login';
 import { Logout } from './components/Auth/Logout/Logout';
 import { About } from './components/Main/About/About';
 import { Profile } from './components/Auth/Profile/Profile';
+import { Blaze } from './components/Main/Blaze/Blaze';
+import { Create } from './components/Main/Create/Create';
+import { Contacts } from './components/Main/Contacts/Contacts';
 
 function App() {
     return (
         <div className="App">
-
             <Header />
 
             <main id="main">
                 <Routes >
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/about' element={<About />}></Route>
+                    <Route path='/blaze' element={<Blaze />}></Route>
+                    <Route path='/create' element={<Create />}></Route>
+                    <Route path='/contacts' element={<Contacts />}></Route>
 
                     <Route path='/users/register' element={<Register />}></Route>
                     <Route path='/users/login' element={<Login />}></Route>

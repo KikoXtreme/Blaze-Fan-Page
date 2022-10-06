@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import { UserProvider } from './context/UserContext';
 
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
@@ -16,28 +17,30 @@ import { Contacts } from './components/Main/Contacts/Contacts';
 
 function App() {
     return (
-        <div className="App">
-            <Header />
+        <UserProvider>
+            <div className="App">
+                <Header />
 
-            <main id="main">
-                <Routes >
-                    <Route path='/' element={<Home />}></Route>
-                    <Route path='/about' element={<About />}></Route>
-                    <Route path='/blaze' element={<Blaze />}></Route>
-                    <Route path='/create' element={<Create />}></Route>
-                    <Route path='/contacts' element={<Contacts />}></Route>
+                <main id="main">
+                    <Routes >
+                        <Route path='/' element={<Home />}></Route>
+                        <Route path='/about' element={<About />}></Route>
+                        <Route path='/blaze' element={<Blaze />}></Route>
+                        <Route path='/create' element={<Create />}></Route>
+                        <Route path='/contacts' element={<Contacts />}></Route>
 
-                    <Route path='/users/register' element={<Register />}></Route>
-                    <Route path='/users/login' element={<Login />}></Route>
-                    <Route path='/users/logout' element={<Logout />}></Route>
-                    <Route path='/users/profile' element={<Profile />}></Route>
+                        <Route path='/users/register' element={<Register />}></Route>
+                        <Route path='/users/login' element={<Login />}></Route>
+                        <Route path='/users/logout' element={<Logout />}></Route>
+                        <Route path='/users/profile' element={<Profile />}></Route>
 
-                    <Route path='/*' element={<NotFound />}></Route>
-                </Routes>
-            </main>
+                        <Route path='/*' element={<NotFound />}></Route>
+                    </Routes>
+                </main>
 
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </UserProvider>
     );
 }
 

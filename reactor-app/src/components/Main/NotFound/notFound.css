@@ -1,12 +1,21 @@
 .notFound {
-    background-color: aqua;
-
+    background-image: url(../../../../public/assets/notFound.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-size: 1200px;
+    min-height: 80vh;
 }
 
-.notFound-title{
-    font-size: 64px;
+.notFound-paragraph {
+    padding: 125px;
 }
 
-.notFound-link{
+.notFound-link {
     font-size: 32px;
+    /* text-decoration: none; */
+    color: blue;
+}
+
+.notFound-link:hover {
+    color: orangered;
 }

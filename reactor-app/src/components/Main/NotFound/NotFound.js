@@ -4,8 +4,9 @@ import './notFound.css';
 export const NotFound = () => {
     return (
         <div className="notFound">
-            <p className="notFound-title">404 - Page Not Found!</p>
-            <p className="notFound-link"><Link to='/'>Home Page</Link></p>
+            <p className="notFound-paragraph">
+                <Link className="notFound-link" to='/'>Let's Blaze to... <b>Home Page</b></Link>
+            </p>
         </div>
     );
 }

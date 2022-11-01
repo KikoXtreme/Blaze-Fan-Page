@@ -5,7 +5,7 @@ export const NotFound = () => {
     return (
         <div className="notFound">
             <p className="notFound-paragraph">
-                <Link className="notFound-link" to='/'>Let's Blaze to... <b>Home Page</b></Link>
+                <Link className="notFound-link" to='/'><i className="fa-solid fa-house"></i> <b>Home Page</b></Link>
             </p>
         </div>
     );

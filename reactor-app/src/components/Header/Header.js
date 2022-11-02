@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header className="header">
             <h1>Blaze and the Monster Machines </h1>
-            <h2>Fan Page <i class="fa-solid fa-car"></i></h2>
+            <h2>Fan Page</h2>
             <div className="header-lists">
                 {user.accessToken
                     ?
@@ -32,8 +32,8 @@ export const Header = () => {
                 {user.accessToken
                     ?
                     <ul className="header-lists-list">
-                        <li><Link to="/users/logout">Logout</Link></li>
                         <li><Link to="/users/profile">{user.username}'s Profile</Link></li>
+                        <li><Link to="/users/logout">Logout</Link></li>
                     </ul>
                     :
                     <ul className="header-lists-list">

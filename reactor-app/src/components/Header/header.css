@@ -5,23 +5,30 @@
 
 .header h1 {
     margin-top: 0;
-    /* background: -webkit-linear-gradient(yellow 40%, red 80%);
-    -webkit-text-stroke: 0.5px black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold; */
 }
 
 .header-lists {
     display: flex;
-    justify-content: space-evenly;
-    gap: 80px;
-    background-color: green;
+    justify-content: center;
+    gap: 500px;
+    background: linear-gradient(180deg, rgba(250, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
 }
 
 .header-lists-list {
+    margin: 2px;
     display: flex;
     list-style-type: none;
-    gap: 40px;
-    background-color: blueviolet;
+    gap: 60px;
+    /* background: rgb(250, 255, 0);
+    background: linear-gradient(180deg, rgba(250, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 100%); */
+}
+
+.header-lists-list li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.header-lists-list li a:hover {
+    color: yellow;
 }

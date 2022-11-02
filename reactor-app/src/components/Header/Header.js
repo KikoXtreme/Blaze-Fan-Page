@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header className="header">
             <h1>Blaze and the Monster Machines </h1>
-            <h2>Fan Page</h2>
+            <h2>Fan Page <i class="fa-solid fa-car"></i></h2>
             <div className="header-lists">
                 {user.accessToken
                     ?
